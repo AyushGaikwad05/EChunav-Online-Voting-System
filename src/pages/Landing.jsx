@@ -30,7 +30,7 @@ const Landing = () => {
           {/* Buttons */}
           <div className="flex justify-center gap-4 flex-wrap">
             <button
-              onClick={() => navigate('/candidates')}
+              onClick={() => navigate('/result')}
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded shadow"
             >
               View Result
