@@ -1,0 +1,46 @@
+.white-container {
+    background-color: #ffffff;
+    display: flex; /* Changed to flex for vertical and horizontal alignment */
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh;
+    width: 50%; /* Give the white container a fixed width too */
+    /* Removed justify-content: end; from here */
+    align-items: center; /* Center horizontally within the white container */
+    padding-top: 50px; /* Add some padding from the top for the header */
+    box-sizing: border-box; /* Include padding in the height/width */
+}
+
+.header { /* Corrected from .Header to .header (lowercase h) if used in CSS */
+    width: 100%; /* Make header span the full width of its parent */
+    text-align: center; /* Center the text within the header */
+    /* padding-right: 0; -- Not needed here, as text-align takes care of it */
+    position: absolute; /* Position the header absolutely within the white container */
+    top: 0; /* Align to the very top */
+    padding-top: 20px; /* Add padding from the actual top edge */
+}
+
+
+.orange-container {
+    background-color: #F97A00;
+    height: 100vh; 
+    width: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    font-size: 1.2em; 
+    box-shadow: 0px 0px 10px rgba(40, 40, 40, 0.878);
+
+}
+
+
+.signup-page-layout {
+    display: flex;
+    height: 100vh; 
+}
+
+.form {
+    align-items: center;
+    padding-top: 30vh
+    ;
+}
