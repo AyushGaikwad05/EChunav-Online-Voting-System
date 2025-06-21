@@ -1,12 +1,112 @@
-# React + Vite
+# 🗳️ eChunav – Online Voting System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**eChunav** is a secure, user-friendly online voting platform designed to simplify the election process in a digital and transparent manner. Built with **React**, **Node.js**, **Express**, and **MongoDB**, it allows users to register, vote, and view results securely.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🧾 User Registration and Login with JWT Authentication
+- 🗳️ One-time Voting Functionality
+- 📊 Real-time Vote Count & Live Results
+- 🧑‍💼 Admin and User Access Separation
+- 📱 Responsive UI for all devices
+- 🔒 Secure API using Express and middleware auth
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Frontend  | Backend       | Database | Others         |
+|-----------|---------------|----------|----------------|
+| React.js  | Node.js       | MongoDB  | Vite, Axios    |
+| Tailwind  | Express.js    | Mongoose | JWT, Dotenv    |
+
+---
+
+## 📂 Project Structure
+
+```
+eChunav/
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   └── models/
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   └── assets/
+└── README.md
+```
+
+---
+
+## 🧪 Installation & Run Locally
+
+### 🔧 Prerequisites
+
+- Node.js & npm
+- MongoDB (local or Atlas)
+
+### 🔌 Backend Setup
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Create a .env file in the backend root:
+
+```env
+PORT=3000
+MONGODB_URI=your_mongodb_url
+JWT_SECRET=your_secret_key
+```
+
+### 💻 Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Create a .env file in the frontend root:
+
+```env
+VITE_BACKEND_URL=http://localhost:3000
+```
+
+---
+
+## 🖼️ Screenshots
+
+<div align="center">
+
+| **Login** | **Signup** | **Landing** |
+|-----------|------------|-------------|
+| <img src="https://drive.google.com/uc?export=view&id=1dJKrSe6ou35FH4agKi1YHZJud0GWdUI7" alt="Login Page" width="500"> | <img src="https://drive.google.com/uc?export=view&id=1y8NlHnsydbjsoet4JbvDfbHUxReMLpOs" alt="Signup Page" width="500"> | <img src="https://drive.google.com/uc?export=view&id=1yyVhnLsA3jTsGnI-Z0CNxvdZGGUVdARI" alt="Landing Page" width="500"> |
+
+| **Home** | **Result** | **Profile** |
+|----------|------------|-------------|
+| <img src="https://drive.google.com/uc?export=view&id=1y8NlHnsydbjsoet4JbvDfbHUxReMLpOs" alt="Home Page" width="500"> | <img src="https://drive.google.com/uc?export=view&id=1p7MKCRTtoOJcPVDuA_4txvVHziRKoMaW" alt="Result Page" width="500"> | <img src="https://drive.google.com/uc?export=view&id=1F6jGCnb5aLKLVnuoY2zi8WwabGWO91HB" alt="Profile Page" width="500"> |
+
+</div>
+
+---
+
+## 🙋‍♂️ Author
+
+**Ayush Gaikwad**
+- 📧 [ayushgaikwad0605@gmail.com](mailto:ayushgaikwad0605@gmail.com)
+- 🌐 [LinkedIn](https://www.linkedin.com/in/ayush-gaikwad05)
+
+
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
